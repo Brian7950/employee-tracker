@@ -20,12 +20,12 @@ SELECT * FROM roles;
 
 INSERT INTO employee( first_name, last_name, role_id, manager_id)
 VALUES
-('STEVE', 'HERNANDEZ', 1,null),
+('STEVE', 'HERNANDEZ', 1,NULL),
 ('Mary','Swanson', 2, null),
 ('Lex','Dunn', 3, null),
-('Mark', 'Guillegos', 4, null)
+('Mark', 'Guillegos', 4, null),
 ('Brian', 'Smith', 5, 1),
-('Bob' 'BOBBY', 6, 2),
+('Bob' ,'BOBBY', 6, 2),
 ('Julie', 'Ski', 7, 3),
 ('Nikki', 'Rest', 8, 4);
 
