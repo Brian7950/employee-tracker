@@ -105,3 +105,53 @@ function addDepartment(){
         });
     })
 }
+
+function addRoles(){
+    inquire.prompt([
+        {
+            type:'input',
+            name:'title',
+            message:'What new role you would like to add',
+
+        },
+
+        {
+            type:'input',
+            name:'salary',
+            message:'Salary for the Role?',
+
+        },
+
+        {
+            type:'list',
+            name:'department_id',
+            message:'What department do they belong to?',
+            choices: [
+                {
+                    value:1,
+                    name:'Marketing'
+                },
+                {
+                    value:2,
+                    name:'Sales'
+                },
+                {
+                    value:3,
+                    name:'HR'
+                },
+                {
+                    value:4,
+                    name:'Tech'
+                },
+            ]
+        }
+      
+    ])
+    .then(userInput =>{
+        connection.query(`INSERT INTO roles (title, salary, department_id) VALUES(?,?,?);`,[userInput.title,userInput.salary,userInput.department_id], function(err,data){
+            if(err) throw err;
+            console.table(data)
+            appStart();
+        });
+    })
+}
