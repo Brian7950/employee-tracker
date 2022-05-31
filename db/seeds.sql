@@ -1,20 +1,20 @@
-USE employee;
+-- USE employee;
 
--- INSERT INTO department (name) VALUES ('Marketing'),('Sales'),('HR'),('Tech');
+INSERT INTO department (name) VALUES ('Marketing'),('Sales'),('HR'),('Tech');
 
 
 select * from department;
 
--- INSERT INTO roles (title, salary, department_id)
--- VALUES
--- ('Manager', 60000, 1),
--- ('Manager',55000,2),
--- ('Manager',55500,3),
--- ('Manager',65000,4),
--- ('Intern',45000,1),
--- ('Intern',45000,2),
--- ('Rep',45000,3),
--- ('Jr Dev',45000,4);
+INSERT INTO roles (title, salary, department_id)
+VALUES
+('Manager', 60000, 1),
+('Manager',55000,2),
+('Manager',55500,3),
+('Manager',65000,4),
+('Intern',45000,1),
+('Intern',45000,2),
+('Rep',45000,3),
+('Jr Dev',45000,4);
 
 SELECT * FROM roles;
 
