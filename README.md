@@ -20,4 +20,5 @@
 ## Usage: <a name="usage"></a>
 ### Employee-Tracker is simple application that can be used from ones command line to access an employee database and view employees, roles, and departments. Users can also add additional roles, employees, and departments as needed as well as edit them. 
 
-## Video of application in use <a name="recording"></a>
+## Application in use <a name="recording"></a>
+![employee-tracker-git](https://user-images.githubusercontent.com/97642221/171299610-16a5e885-1ccd-4357-928a-e35a3e17c980.JPG)
